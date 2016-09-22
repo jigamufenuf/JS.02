@@ -1,0 +1,24 @@
+<html>
+  <head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <form>
+  <button>Press this button to see the nutrition in Deit Coce and Ganger Ill (Copyright) in the browser's console.</button>
+ 	 <script>
+ 	 $("button").click(function() {
+ 	 var deitCoce = {calories:"Zero", totalFat:"Zero Grams", sodium:"Forty Milligrams"};
+ 	 var gangerIll = {calories:"One Hundered and Forty", totalFat:"Zero Grams", sodium:"Fifty Milligrams"}
+ 	 console.log("Deit Coce");
+ 	 console.log("calories = " + deitCoce.calories);
+ 	 console.log("total fat = " + deitCoce.totalFat);
+ 	 console.log("sodium = " + deitCoce.sodium);
+ 	 console.log("");
+ 	 console.log("Ganger Ill");
+ 	 console.log("calories = " + gangerIll.calories);
+ 	 console.log("total fat = " + gangerIll.totalFat);
+ 	 console.log("sodium = " + gangerIll.sodium);
+
+ 	});
+ 	 </script>
+  </form>
+  </head>
+ </html>
