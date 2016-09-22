@@ -1,0 +1,39 @@
+<html>
+  <head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <form>
+  Sign Up for This Totally Radi-cool Website<br/>
+  Password: <input type="text" id="password"><br/>
+  Password Re-Enter: <input type="text" id="password2"><br/>
+  Username: <input type="text" id="username"><br/>
+  <button>Login</button>
+
+ 	 <script>
+ 	 $("button").click(function() {
+ 	 var password = $("input#password").val();
+ 	 var passwordTwo = $("input#password2").val();
+ 	 if(password == passwordTwo){
+ 	 	alert("you have chosen the password: " + password + ".");
+	}if(password == userTwo.password){
+    alert("Someone has already chosen this password.");
+  } else {
+ 	 var username = $("input#username").val();
+ 	 alert("you choose the username: " + username);
+   if(username == userTwo.username){
+    alert("Someone already has that username.");
+   } else {
+
+ 	 var userOne = {username:username, password:password};
+   var userTwo = {username:"heck", password:"monkey"};
+	 if (username == userOne.username && password == userOne.password){
+ 	 	alert("You good fam");
+ 	 } else {
+ 	 	alert("heck man you wrong");
+ 	 }
+  }
+}
+  	});
+ 	 </script>
+  </form>
+  </head>
+ </html>
