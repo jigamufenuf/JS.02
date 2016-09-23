@@ -1,0 +1,14 @@
+<html>
+<head>
+<script>
+var somebody = prompt("sombody");
+var told = prompt("told");
+var the = prompt("the");
+var was = prompt("was");
+var roll = prompt("roll");
+
+alert("Link to values: http://data.sparkfun.com/input/g6b48o3VW2fXMglDy0NZ?private_key=qzlWmd4XEkH7Ae05oPxd&roll=" + roll + "&somebody=" + somebody + "&the=" + the + "&told=" + told + "&was=" + was);
+
+</script>
+</head>
+</html>
