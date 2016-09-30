@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<style>
+body {font-family: "Lato", sans-serif;}
+
+ul.tab {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+}
+
+/* Float the list items side by side */
+ul.tab li {float: left;}
+
+/* Style the links inside the list items */
+ul.tab li a {
+    display: inline-block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+/* Change background color of links on hover */
+ul.tab li a:hover {
+    background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+ul.tab li a:focus, .active {
+    background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+}
+</style>
+<body>
+
+
+<ul class="tab">
+  <li><a href="#" class="tablinks" onclick="openTab(event, 'Sign Up')">Sign Up</a></li>
+  <li><a href="#" class="tablinks" onclick="openTab(event, 'Login')">Login</a></li>
+</ul>
+
+<div id="Sign Up" class="tabcontent">
+  <form id="signUpForm">
+
+
+  Sign Up for This Totally Radi-cool Website<br/>
+  Password: <input type="text" id="password"><br/>
+  Password Re-Enter: <input type="text" id="password2"><br/>
+  Username: <input type="text" id="username"><br/>
+  <button>Sign Up Dude</button><br/>
+  <br/>
+
+  <script>
+   var sparkfun = "https://data.sparkfun.com/input/g6bAzJJWjLhNQlJ7WxzA?private_key=qzlZKDDEryIxa0BYwRjE&password1=25.35&password2=boot.06&username1=15.41&username2=toob"
+   var users = [ ];
+   var password;
+   var passwordTwo;
+   var username;
+
+   $("button").click(function heck(poop) {
+   password = $("input#password").val();
+   passwordTwo = $("input#password2").val();
+   username = $("input#username").val();
+
+   users.push(username);
+   users.push(password);
+   sparkfun = "https://data.sparkfun.com/input/g6bAzJJWjLhNQlJ7WxzA?private_key=qzlZKDDEryIxa0BYwRjE&password1=" + password + ".35&password2=boot.06&username1=" + username + ".41&username2=2.toob";
+   alert(users[0]);
+   alert("heck");
+   poop.preventDefault();
+    });
+  </script>
+  </form>
+</div>
+
+
+<div id="Login" class="tabcontent">
+   Welcome Back Nerd<br/>
+   Username: <input type="text" id="usernameEnter"><br/>
+   Password: <input type="text" id="passwordEnter"><br/>
+   <button type="button" onclick="loginDude()">Click Me!</button>
+
+  <script>
+    function loginDude(){
+    alert(sparkfun);
+    alert(users[1]);
+   var passwordCheck = $("input#passwordEnter").val();
+   var usernameCheck = $("input#usernameEnter").val();
+
+   if(usernameCheck == users[0] && passwordCheck == users[1]){
+     alert("your winner");
+   }
+   else{
+     alert("frog detected");
+   }
+  }
+   </script>
+</div>
+
+<script>
+function openTab(evt, tabName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(tabName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+</script>
+
+</body>
+</html>
+
