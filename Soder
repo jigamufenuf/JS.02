@@ -4,7 +4,7 @@
   <form>
   <button>Press this button to see the nutrition in Deit Coce and Ganger Ill (Copyright) in the browser's console.</button>
  	 <script>
- 	 $("button").click(function() {
+ 	 $("button").click(function(poop) {
  	 var deitCoce = {calories:"Zero", totalFat:"Zero Grams", sodium:"Forty Milligrams"};
  	 var gangerIll = {calories:"One Hundered and Forty", totalFat:"Zero Grams", sodium:"Fifty Milligrams"}
  	 console.log("Deit Coce");
@@ -16,7 +16,7 @@
  	 console.log("calories = " + gangerIll.calories);
  	 console.log("total fat = " + gangerIll.totalFat);
  	 console.log("sodium = " + gangerIll.sodium);
-
+   poop.preventDefault();
  	});
  	 </script>
   </form>
